@@ -8,6 +8,8 @@
 
 body {
   background: var(--primary-color);
+  margin: 0;
+  font-family: "Poppins";
 }
 
 li {
@@ -16,4 +18,34 @@ li {
 
 a {
   text-decoration: none;
+}
+
+section.navbar-section {
+  margin: 3em 9em;
+}
+section.navbar-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+section.navbar-section .container a.logo {
+  color: var(--white-color);
+  font-size: 1.6em;
+  height: auto;
+  font-weight: 400;
+}
+section.navbar-section .container nav.navigation {
+  place-content: end;
+}
+section.navbar-section .container nav.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+section.navbar-section .container nav.navigation ul li {
+  margin-left: 2em;
+}
+section.navbar-section .container nav.navigation ul li a {
+  color: var(--white-color);
+  font-size: 1.1em;
 }/*# sourceMappingURL=style.css.map */

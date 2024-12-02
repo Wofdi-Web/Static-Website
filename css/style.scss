@@ -11,6 +11,8 @@
 
 body {
     background: var(--primary-color);
+    margin: 0;
+    font-family: 'Poppins';
 }
 
 li {
@@ -19,6 +21,44 @@ li {
 
 a {
     text-decoration: none;
+}
+
+
+
+// Navbar
+section.navbar-section {
+    margin: 3em 9em;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        a.logo {
+            color: var(--white-color);
+            font-size: 1.6em;
+            height: auto;
+            font-weight: 400;
+        }
+        nav.navigation {
+            place-content: end;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+    
+                li {
+                    margin-left: 2em;
+
+                    a {
+                        color: var(--white-color);
+                        font-size: 1.1em;                        
+                    }
+                }
+            }
+        }
+    }
 }
 
 
