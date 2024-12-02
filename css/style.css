@@ -4,4 +4,16 @@
   --title-color: #FF7575;
   --white-color: #FFFFFF;
   --gray-color: #909090;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
