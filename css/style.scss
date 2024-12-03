@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 970px;
+    width: 1150px;
     margin: 1em auto;
 }
 
@@ -67,6 +67,7 @@ section.navbar-section {
 // Hero Section
 section.hero-section {
     margin: 3em 9em;
+
     .container {
         text-align: center;
         margin-top: 5em;
@@ -88,7 +89,38 @@ section.hero-section {
     }
 }
 
+// Categories Section
+section.categories-section {
+    margin: 6em 9em 4em 9em;
+    border-top: 3px solid #4D4D4D;
 
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                &:nth-child(1) {
+                    margin-right: 0.8em;
+                }
+            }
+        }
+
+        a {
+            color: var(--gray-color);
+            font-family: 'Recursive';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 27px;
+            height: fit-content;
+        }
+    }
+}
 
 
 
