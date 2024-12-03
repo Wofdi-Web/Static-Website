@@ -22,7 +22,10 @@ li {
 a {
     text-decoration: none;
 }
-
+.container {
+    width: 970px;
+    margin: 1em auto;
+}
 
 
 // Navbar
@@ -60,5 +63,7 @@ section.navbar-section {
         }
     }
 }
+
+// Hero Section
 
 
