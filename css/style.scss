@@ -140,7 +140,9 @@ section.articles-section {
             
             img {
                 width: 100%;
-                background-size: contain;
+                height: 12em;
+                border-radius: 1em;
+                // background-size: contain;
                 object-fit: cover;
                 object-position: center;
             }
