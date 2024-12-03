@@ -65,5 +65,34 @@ section.navbar-section {
 }
 
 // Hero Section
+section.hero-section {
+    margin: 3em 9em;
+    .container {
+        text-align: center;
+        margin-top: 5em;
+
+        h1 {
+            font-family: 'Recursive';
+            color: var(--title-color);
+            font-weight: 400;
+            font-size: 4.6em;
+            margin: 0.5em auto 0.2em auto;
+            font-style: italic;
+        }
+
+        p {
+            color: var(--white-color);
+            font-size: 1.8em;
+            margin: 0.2em auto 1em auto;
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
