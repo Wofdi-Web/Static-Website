@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1150px;
+  margin: 1em auto;
+}
+
 section.navbar-section {
   margin: 3em 9em;
 }
@@ -48,4 +53,95 @@ section.navbar-section .container nav.navigation ul li {
 section.navbar-section .container nav.navigation ul li a {
   color: var(--white-color);
   font-size: 1.1em;
+}
+
+section.hero-section {
+  margin: 3em 9em;
+}
+section.hero-section .container {
+  text-align: center;
+  margin-top: 5em;
+}
+section.hero-section .container h1 {
+  font-family: "Recursive";
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 4.6em;
+  margin: 0.5em auto 0.2em auto;
+  font-style: italic;
+}
+section.hero-section .container p {
+  color: var(--white-color);
+  font-size: 1.8em;
+  margin: 0.2em auto 1em auto;
+}
+
+section.categories-section {
+  margin: 6em 0 4em 0;
+  border-top: 3px solid #4D4D4D;
+}
+section.categories-section .categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.categories-section .categories .icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.categories-section .categories .icon-wrapper img:nth-child(1) {
+  margin-right: 0.8em;
+}
+section.categories-section .categories a {
+  color: var(--gray-color);
+  font-family: "Recursive";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 27px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+section.articles-section {
+  margin: 6.5em 9em;
+}
+section.articles-section .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+section.articles-section .container .article {
+  background: var(--white-color);
+  display: block;
+  margin: 1em;
+  padding: 1.1em;
+  border-radius: 1.4em;
+}
+section.articles-section .container .article img {
+  width: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section.articles-section .container .article h2 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+section.articles-section .container .article .date-category {
+  font-family: "Poppins";
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+section.articles-section .container .article .date-category img {
+  height: 0.2em;
+  width: 0.2em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */
