@@ -211,7 +211,8 @@ section.pagination-section .page ul li a:hover::before {
 }
 
 footer.footer {
-  margin: 6em auto 4em auto;
+  margin: 10em auto 6em auto;
+  padding-top: 3em;
   border-top: 3px solid #4D4D4D;
   height: -moz-fit-content;
   height: fit-content;
@@ -247,6 +248,7 @@ footer.footer .wrapper-footer .right-col {
   background: #4699E0;
   border-radius: 0.3em;
   display: flex;
+  color: var(--white-color);
 }
 footer.footer .wrapper-footer .right-col p {
   margin: 0;
