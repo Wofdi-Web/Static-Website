@@ -173,7 +173,7 @@ section.articles-section {
 
 // Pagination Section
 section.pagination-section {
-    margin: 3em autoqw;
+    margin: 3em auto;
 
     .page {
         display: grid;
@@ -181,9 +181,27 @@ section.pagination-section {
         margin: 1em 15em;
         align-items: center;
 
+        .text {
+            transition: 0.3s ease-in;
+            &:hover {
+                color: var(--title-color);
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                padding-bottom: 0.3em;
+                border-top: 3px solid var(--title-color);
+                transform: scaleX(0);
+                transition: 0.3s ease-out;
+            }
+
+            &:hover::before {
+                transform: scaleX(0.8);
+            }
+        }
 
         a {
-            margin-top: 0.3em;
             color: var(--gray-color);
             font-family: 'Recursive';
             font-size: 2em;

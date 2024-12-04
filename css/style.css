@@ -148,7 +148,7 @@ section.articles-section .container .article .date-category img {
 }
 
 section.pagination-section {
-  margin: 3em autoqw;
+  margin: 3em auto;
 }
 section.pagination-section .page {
   display: grid;
@@ -156,8 +156,24 @@ section.pagination-section .page {
   margin: 1em 15em;
   align-items: center;
 }
+section.pagination-section .page .text {
+  transition: 0.3s ease-in;
+}
+section.pagination-section .page .text:hover {
+  color: var(--title-color);
+}
+section.pagination-section .page .text::before {
+  content: "";
+  display: block;
+  padding-bottom: 0.3em;
+  border-top: 3px solid var(--title-color);
+  transform: scaleX(0);
+  transition: 0.3s ease-out;
+}
+section.pagination-section .page .text:hover::before {
+  transform: scaleX(0.8);
+}
 section.pagination-section .page a {
-  margin-top: 0.3em;
   color: var(--gray-color);
   font-family: "Recursive";
   font-size: 2em;
