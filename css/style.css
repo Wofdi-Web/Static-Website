@@ -224,4 +224,32 @@ footer.footer .wrapper-footer {
 footer.footer .wrapper-footer .left-col {
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+footer.footer .wrapper-footer .left-col p {
+  margin: 0;
+  font-family: "Source Sans 3";
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+footer.footer .wrapper-footer .left-col a {
+  background: #4699E0;
+  color: var(--white-color);
+  padding: 0.2em 0.7em;
+  font-size: 1.1em;
+  border-radius: 0.3em;
+}
+footer.footer .wrapper-footer .right-col {
+  padding: 0.2em 0.7em;
+  background: #4699E0;
+  border-radius: 0.3em;
+  display: flex;
+}
+footer.footer .wrapper-footer .right-col p {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: "Source Sans 3";
 }/*# sourceMappingURL=style.css.map */
