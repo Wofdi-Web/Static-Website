@@ -24,7 +24,7 @@ a {
 }
 .container {
     width: 1150px;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 
@@ -244,3 +244,22 @@ section.pagination-section {
         }
     }
 }
+
+// Footer
+footer.footer {
+    margin: 6em auto 4em auto;
+    border-top: 3px solid #4D4D4D;
+    height: fit-content;
+
+    .wrapper-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-col {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+

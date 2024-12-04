@@ -22,7 +22,7 @@ a {
 
 .container {
   width: 1150px;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 
 section.navbar-section {
@@ -77,7 +77,6 @@ section.hero-section .container p {
 }
 
 section.categories-section {
-  margin: 6em 0 4em 0;
   margin: 6em auto 4em auto;
   border-top: 3px solid #4D4D4D;
 }
@@ -209,4 +208,20 @@ section.pagination-section .page ul li a::before {
 }
 section.pagination-section .page ul li a:hover::before {
   transform: scaleX(3.2);
+}
+
+footer.footer {
+  margin: 6em auto 4em auto;
+  border-top: 3px solid #4D4D4D;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+footer.footer .wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer.footer .wrapper-footer .left-col {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
