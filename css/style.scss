@@ -188,6 +188,7 @@ section.pagination-section {
             font-family: 'Recursive';
             font-size: 2em;
             text-align: center;
+            font-style: italic;
         }
         
         ul {
@@ -200,20 +201,26 @@ section.pagination-section {
             
             li {
                 margin : 0 0.5em 0 0.5em;
-                color: var(--gray-color);
                 text-align: center;
 
-                &::before {
-                    content: '';
-                    display: block;
-                    padding-bottom: 0.3em;
-                    border-top: 3px solid var(--title-color);
-                    transform: scaleX(0);
-                    transition: 0.3s ease-out;
-                }
-
-                &:hover::before {
-                    transform: scaleX(3.2);
+                a {
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        color: var(--title-color);
+                    }
+    
+                    &::before {
+                        content: '';
+                        display: block;
+                        padding-bottom: 0.3em;
+                        border-top: 3px solid var(--title-color);
+                        transform: scaleX(0);
+                        transition: 0.3s ease-out;
+                    }
+    
+                    &:hover::before {
+                        transform: scaleX(3.2);
+                    }   
                 }
             }
         }
