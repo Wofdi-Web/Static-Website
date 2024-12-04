@@ -26,7 +26,7 @@ a {
 }
 
 section.navbar-section {
-  margin: 3em 9em;
+  margin: 3em auto;
 }
 section.navbar-section .container {
   display: flex;
@@ -56,7 +56,7 @@ section.navbar-section .container nav.navigation ul li a {
 }
 
 section.hero-section {
-  margin: 3em 9em;
+  margin: 3em auto;
 }
 section.hero-section .container {
   text-align: center;
@@ -77,8 +77,7 @@ section.hero-section .container p {
 }
 
 section.categories-section {
-  margin: 6em 0 4em 0;
-
+  margin: 6em auto 4em auto;
   border-top: 3px solid #4D4D4D;
 }
 section.categories-section .categories {
@@ -105,7 +104,7 @@ section.categories-section .categories a {
 }
 
 section.articles-section {
-  margin: 6.5em 9em;
+  margin: 6.5em auto;
 }
 section.articles-section .container {
   display: grid;
@@ -146,4 +145,37 @@ section.articles-section .container .article .date-category img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+section.pagination-section {
+  margin: 3em autoqw;
+}
+section.pagination-section .page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1em 15em;
+  align-items: center;
+}
+section.pagination-section .page a {
+  margin: 0;
+  padding: 0;
+  color: var(--gray-color);
+  font-family: "Recursive";
+  font-size: 2em;
+  text-align: center;
+}
+section.pagination-section .page ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Recursive";
+}
+section.pagination-section .page ul li {
+  margin: 0 1em 0 1em;
+  color: var(--gray-color);
+}
+section.pagination-section .page ul li.current a {
+  color: var(--title-color);
 }/*# sourceMappingURL=style.css.map */
