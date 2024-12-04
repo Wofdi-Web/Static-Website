@@ -30,7 +30,7 @@ a {
 
 // Navbar
 section.navbar-section {
-    margin: 3em 9em;
+    margin: 3em auto;
 
     .container {
         display: flex;
@@ -66,7 +66,7 @@ section.navbar-section {
 
 // Hero Section
 section.hero-section {
-    margin: 3em 9em;
+    margin: 3em auto;
 
     .container {
         text-align: center;
@@ -91,7 +91,7 @@ section.hero-section {
 
 // Categories Section
 section.categories-section {
-    margin: 6em 0 4em 0;
+    margin: 6em auto 4em auto;
     border-top: 3px solid #4D4D4D;
 
     .categories {
@@ -124,11 +124,12 @@ section.categories-section {
 
 // Article Section
 section.articles-section {
-    margin: 6.5em 9em;
+    margin: 6.5em auto;
 
     .container {
         display: grid;
         grid-template-columns: auto auto auto;
+        // grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
         .article {
             background: var(--white-color);
@@ -164,6 +165,80 @@ section.articles-section {
                     width: 0.2em;
                     object-fit: cover;
                     object-position: center;
+                }
+            }
+        }
+    }
+}
+
+// Pagination Section
+section.pagination-section {
+    margin: 3em auto;
+
+    .page {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 1em 15em;
+        align-items: center;
+
+        .text {
+            transition: 0.3s ease-in;
+            &:hover {
+                color: var(--title-color);
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                padding-bottom: 0.3em;
+                border-top: 3px solid var(--title-color);
+                transform: scaleX(0);
+                transition: 0.3s ease-out;
+            }
+
+            &:hover::before {
+                transform: scaleX(0.8);
+            }
+        }
+
+        a {
+            color: var(--gray-color);
+            font-family: 'Recursive';
+            font-size: 2em;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-family: 'Recursive';
+            
+            li {
+                margin : 0 0.5em 0 0.5em;
+                text-align: center;
+
+                a {
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        color: var(--title-color);
+                    }
+    
+                    &::before {
+                        content: '';
+                        display: block;
+                        padding-bottom: 0.3em;
+                        border-top: 3px solid var(--title-color);
+                        transform: scaleX(0);
+                        transition: 0.3s ease-out;
+                    }
+    
+                    &:hover::before {
+                        transform: scaleX(3.2);
+                    }   
                 }
             }
         }
