@@ -78,6 +78,7 @@ section.hero-section .container p {
 
 section.categories-section {
   margin: 6em auto 4em auto;
+  padding-top: 1em;
   border-top: 3px solid #4D4D4D;
 }
 section.categories-section .categories {
@@ -89,6 +90,9 @@ section.categories-section .categories .icon-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+section.categories-section .categories .icon-wrapper img {
+  cursor: pointer;
 }
 section.categories-section .categories .icon-wrapper img:nth-child(1) {
   margin-right: 0.8em;
@@ -161,6 +165,7 @@ section.pagination-section .page .text {
 }
 section.pagination-section .page .text:hover {
   color: var(--title-color);
+  font-weight: bold;
 }
 section.pagination-section .page .text::before {
   content: "";
@@ -197,6 +202,7 @@ section.pagination-section .page ul li a {
 }
 section.pagination-section .page ul li a:hover {
   color: var(--title-color);
+  font-weight: bold;
 }
 section.pagination-section .page ul li a::before {
   content: "";

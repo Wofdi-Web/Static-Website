@@ -92,6 +92,7 @@ section.hero-section {
 // Categories Section
 section.categories-section {
     margin: 6em auto 4em auto;
+    padding-top: 1em;
     border-top: 3px solid #4D4D4D;
 
     .categories {
@@ -105,6 +106,8 @@ section.categories-section {
             align-items: center;
 
             img {
+                cursor: pointer;
+
                 &:nth-child(1) {
                     margin-right: 0.8em;
                 }
@@ -185,6 +188,7 @@ section.pagination-section {
             transition: 0.3s ease-in;
             &:hover {
                 color: var(--title-color);
+                font-weight: bold;
             }
 
             &::before {
@@ -225,6 +229,7 @@ section.pagination-section {
                     transition: 0.2s ease-in-out;
                     &:hover {
                         color: var(--title-color);
+                        font-weight: bold;
                     }
     
                     &::before {
